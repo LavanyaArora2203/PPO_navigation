@@ -1,7 +1,10 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from uuid import UUID
-import models
+from models import *
+from routes.chat import router as chat_router
+
+
 
 from database import Base, engine, get_db
 
@@ -9,6 +12,7 @@ from models import Task as TaskModel
 from schemas import TaskCreate, TaskUpdate,Task
 
 app = FastAPI()
+app.include_router(chat_router)
 
 # Create tables
 Base.metadata.create_all(bind=engine)
