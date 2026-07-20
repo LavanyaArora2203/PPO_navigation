@@ -1,0 +1,74 @@
+                                USER
+                                  │
+                                  ▼
+                        Start Email Workflow
+                                  │
+                                  ▼
+                     Gmail Fetch Tool (Unread Emails)
+                                  │
+                                  ▼
+                         Input Validation Guard
+                                  │
+                                  ▼
+                   Prompt Injection Detection Guard
+                                  │
+                                  ▼
+                  Email Understanding Agent (LLM)
+                                  │
+                                  ▼
+                     Classification Agent (LLM)
+                                  │
+                                  ▼
+                        Confidence Guard
+                                  │
+                                  ▼
+                       Priority Agent (LLM)
+                                  │
+                                  ▼
+                        Planner Agent (LLM)
+                                  │
+                                  ▼
+                         Planner Guard
+                                  │
+                                  ▼
+                   Human Approval Needed?
+                    ┌────────────┴─────────────┐
+                    │                          │
+                  YES                         NO
+                    │                          │
+             Human approves               Continue
+                    │                          │
+                    └────────────┬─────────────┘
+                                 ▼
+                     Tool Permission Guard
+                                 │
+                                 ▼
+                      Tool Argument Guard
+                                 │
+                                 ▼
+                        Executor Agent
+                                 │
+          ┌──────────────┬───────────────┬──────────────┐
+          ▼              ▼               ▼              ▼
+     Gmail Tool     Calendar Tool     Task Tool   Notification Tool
+          │
+          ▼
+     Tool Execution Result
+          │
+          ▼
+        PII Guard
+          │
+          ▼
+      Output Guard
+          │
+          ▼
+      Audit Logger
+          │
+          ▼
+     Memory Guard
+          │
+          ▼
+      Memory Manager
+          │
+          ▼
+     Workflow Finished

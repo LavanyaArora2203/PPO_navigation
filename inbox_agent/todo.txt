@@ -1,0 +1,22 @@
+**defining all tools for executor agent**
+define state
+build graph
+**corrections in code
+backend api
+**guardrails
+**memory
+**gmail api
+streamlit frontend
+
+
+
+guardrails,memory,security,human in loop workflows
+observablity including agent tracingd,evaluation,testing,cost optiimization
+
+memory management
+1. working memory - state - used while an agent is performing a task only during the execution
+2. short term memory(conversation memory) - stores information for one conversation or session.
+3. long term memory - stores information across multiple conversations.
+4. Shared memory is accessible by multiple agents.
+5. Knowledge Memory - RAG DB
+

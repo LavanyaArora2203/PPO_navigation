@@ -1,0 +1,33 @@
+                 Email
+                   │
+                   ▼
+          Email Understanding
+                   │
+                   ▼
+              Planner Agent
+                   │
+         Retrieves Memory
+                   │
+                   ▼
+             Generates Plan
+                   │
+                   ▼
+             Executes Plan
+                   │
+                   ▼
+            Memory Guard
+                   │
+     Is there anything worth remembering?
+             │                 │
+             │                 │
+            NO                YES
+             │                 │
+             ▼                 ▼
+          Finish         Memory Manager
+                               │
+                 ┌─────────────┴─────────────┐
+                 ▼                           ▼
+          Short-Term Memory          Long-Term Memory
+                               │
+                               ▼
+                         SQLite / Vector DB
